@@ -34,3 +34,6 @@ cd ham-radio-blog
 npm install
 npm run dev
 ```
+
+📜 License
+MIT — do whatever you want, just give credit if you fork or reuse.
