@@ -1,23 +1,43 @@
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-gray-100 border-t">
-      <div className="container">
-        <div className="flex flex-col items-center py-28 lg:flex-row">
-          <h3 className="mb-10 text-center text-4xl font-bold leading-tight tracking-tighter lg:mb-0 lg:w-1/2 lg:pr-4 lg:text-left lg:text-5xl">
-            Built with Sanity + Next.js.
-          </h3>
-          <div className="flex flex-col gap-3 items-center justify-center lg:w-1/2 lg:flex-row lg:pl-4">
-            <a
-              href="https://github.com/sanity-io/sanity-template-nextjs-clean"
-              className="rounded-full flex gap-2 items-center bg-black hover:bg-red-500 focus:bg-cyan-500 py-3 px-6 text-white transition-colors duration-200"
+    <footer className="bg-gray-50 border-t border-gray-100">
+      <div className="container py-12">
+        <div className="text-center">
+          <p className="text-sm text-gray-600">
+            If you have suggestions or want to contact me:
+          </p>
+          <div className="flex justify-center gap-6 mt-4">
+            <Link
+              href="https://github.com/adriankarp"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
             >
-              View on GitHub
-            </a>
-            <a href="https://nextjs.org/docs" className="mx-3 hover:underline">
-              Read Next.js Documentation
-            </a>
+              <FaGithub className="h-5 w-5" />
+              <span>GitHub</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/adrian-karp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+            >
+              <FaLinkedin className="h-5 w-5" />
+              <span>LinkedIn</span>
+            </Link>
+            <Link
+              href="mailto:karp.adrian@protonmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+            >
+              <MdEmail className="h-5 w-5" />
+              <span>Email</span>
+            </Link>
           </div>
         </div>
       </div>

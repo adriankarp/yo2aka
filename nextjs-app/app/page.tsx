@@ -2,48 +2,43 @@ import { Suspense } from "react";
 import Link from "next/link";
 
 import { AllPosts } from "@/app/components/Posts";
-import GetStartedCode from "@/app/components/GetStartedCode";
 
 export default async function Page() {
   return (
     <>
-      <div className="bg-gradient-to-r from-red-200 from-0% via-white via-40%  relative">
+      <div className="bg-gradient-to-r from-red-200 from-0% via-white via-40% relative">
         <div className="bg-gradient-to-b from-white w-full h-40 absolute top-0"></div>
         <div className="bg-gradient-to-t from-white w-full h-40 absolute bottom-0"></div>
         <div className="container relative">
           <div className="mx-auto max-w-2xl py-20 lg:max-w-4xl lg:px-12 text-center">
             <div className="flex flex-col gap-4 items-center">
-              <div className=" text-md leading-6 prose uppercase">
-                A starter template for
+              <div className="text-md leading-6 prose uppercase text-gray-700">
+                Exploring the world of
               </div>
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black">
-                <Link className="text-red-500 " href="https://sanity.io/">
-                  Sanity
-                </Link>{" "}
-                +{" "}
-                <Link className="text-[#000] " href="https://nextjs.org/">
-                  Next.js
-                </Link>
+                Amateur Radio
               </h1>
             </div>
             <div className="mt-6 space-y-6 prose sm:prose-lg md:prose-xl lg:prose-2xl text-gray-700">
               <p>
-                This starter is a statically generated site that uses Next.js
-                for the frontend and Sanity to handle its content. It comes with
-                a standalone Sanity Studio that offers features like real-time
-                collaboration, instant side-by-side content previews, and
-                intuitive editing.
+                Welcome to my ham radio blog — a space where I document my
+                journey into the world of amateur radio. Whether you're curious
+                about getting licensed, learning the basics, or experimenting
+                with antennas, there's something here for you.
+              </p>
+              <p>
+                I’m building this blog to solidify my own understanding and
+                share what I learn along the way.
               </p>
             </div>
-            <div className="flex items-center flex-col gap-4">
-              <GetStartedCode />
+            <div className="flex items-center flex-col gap-4 mt-6">
               <Link
-                href="https://www.sanity.io/docs"
+                href="https://www.iaru.org/amateur-radio/what-is-amateur-radio/"
                 className="inline-flex text-red-500 text-xs md:text-sm underline hover:text-gray-900"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Sanity Documentation
+                Learn more about Amateur Radio
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
